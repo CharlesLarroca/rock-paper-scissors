@@ -23,11 +23,11 @@ function playGame(){
       draw++
     }
     else if(computerPlayer === 'Rock' && humanPlayer === 'Paper'){
-      alert('Paper Win: '+`${computerPlayer} - ${humanPlayer}`)
+      alert('Human point, Paper Win: '+`${computerPlayer} - ${humanPlayer}`)
       humanScore++
     }
     else if(computerPlayer === 'Rock' && humanPlayer === 'Scissor'){
-      alert('Rock Win: '+`${computerPlayer} - ${humanPlayer}`)
+      alert('Computer point, Rock Win: '+`${computerPlayer} - ${humanPlayer}`)
       computerScore++
     }
     else if(computerPlayer === 'Paper' && humanPlayer === 'Paper'){
@@ -35,23 +35,23 @@ function playGame(){
       draw++
     }
     else if(computerPlayer === 'Paper' && humanPlayer === 'Rock'){
-      alert('Paper Win: '+`${computerPlayer} - ${humanPlayer}`)
-      humanScore++
-    }
-    else if(computerPlayer === 'Paper' && humanPlayer === 'Rock'){
-      alert('Rock Win: '+`${computerPlayer} - ${humanPlayer}`)
+      alert('Computer point, Paper Win: '+`${computerPlayer} - ${humanPlayer}`)
       computerScore++
+    }
+    else if(computerPlayer === 'Paper' && humanPlayer === 'Scissor'){
+      alert('Human point, Scissor Win: '+`${computerPlayer} - ${humanPlayer}`)
+      humanScore++
     }
     else if(computerPlayer === 'Scissor' && humanPlayer === 'Scissor'){
       alert('Tie: '+`${computerPlayer} - ${humanPlayer}`)
       draw++
     }
     else if(computerPlayer === 'Scissor' && humanPlayer === 'Rock'){
-      alert('Paper Win: '+`${computerPlayer} - ${humanPlayer}`)
+      alert('Human point, Rock Win: '+`${computerPlayer} - ${humanPlayer}`)
       humanScore++
     }
     else if(computerPlayer === 'Scissor' && humanPlayer === 'Paper'){
-      alert('Rock Win: '+`${computerPlayer} - ${humanPlayer}`)
+      alert('Computer point, Scissor Win: '+`${computerPlayer} - ${humanPlayer}`)
       computerScore++
     }
 
